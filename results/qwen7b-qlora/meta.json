@@ -1,0 +1,71 @@
+{
+  "run_name": "qwen7b-qlora",
+  "metrics": {
+    "tweeteval": {
+      "accuracy": 0.7410452621295994,
+      "macro_f1": 0.741674776583094,
+      "macro_recall": 0.752354733303778,
+      "confusion_matrix": [
+        [
+          3202,
+          717,
+          53
+        ],
+        [
+          1143,
+          4092,
+          702
+        ],
+        [
+          35,
+          531,
+          1809
+        ]
+      ],
+      "n": 12284
+    },
+    "own": {
+      "accuracy": 0.9944444444444445,
+      "macro_f1": 0.9944440586151817,
+      "macro_recall": 0.9944444444444445,
+      "confusion_matrix": [
+        [
+          59,
+          0,
+          1
+        ],
+        [
+          0,
+          60,
+          0
+        ],
+        [
+          0,
+          0,
+          60
+        ]
+      ],
+      "n": 180
+    }
+  },
+  "cost": {
+    "trainable_params": 40380928,
+    "total_params": 3848366592,
+    "train_time_s": 4583.462437868118,
+    "peak_train_mem_gb": 6.858162879943848,
+    "peak_infer_mem_gb": 6.5808916091918945,
+    "throughput_tweets_per_s": 49.28525381980974,
+    "infer_batch_size": 32,
+    "device": "cuda",
+    "qlora": true
+  },
+  "args": {
+    "run_name": "qwen7b-qlora",
+    "max_train": null,
+    "seed": 42,
+    "results_root": "results",
+    "model": "Qwen/Qwen2.5-7B-Instruct",
+    "epochs": 1,
+    "qlora": true
+  }
+}

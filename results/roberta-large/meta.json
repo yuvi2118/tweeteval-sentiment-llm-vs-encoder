@@ -1,0 +1,69 @@
+{
+  "run_name": "roberta-large",
+  "metrics": {
+    "tweeteval": {
+      "accuracy": 0.7124715076522306,
+      "macro_f1": 0.7138826247424869,
+      "macro_recall": 0.7381428123153039,
+      "confusion_matrix": [
+        [
+          3224,
+          662,
+          86
+        ],
+        [
+          1296,
+          3661,
+          980
+        ],
+        [
+          43,
+          465,
+          1867
+        ]
+      ],
+      "n": 12284
+    },
+    "own": {
+      "accuracy": 0.9777777777777777,
+      "macro_f1": 0.9778991828327692,
+      "macro_recall": 0.9777777777777777,
+      "confusion_matrix": [
+        [
+          57,
+          0,
+          3
+        ],
+        [
+          0,
+          59,
+          1
+        ],
+        [
+          0,
+          0,
+          60
+        ]
+      ],
+      "n": 180
+    }
+  },
+  "cost": {
+    "trainable_params": 355362819,
+    "total_params": 355362819,
+    "train_time_s": 808.7140824794769,
+    "peak_train_mem_gb": 6.612419128417969,
+    "peak_infer_mem_gb": 4.6242876052856445,
+    "throughput_tweets_per_s": 594.4452337701999,
+    "infer_batch_size": 32,
+    "device": "cuda"
+  },
+  "args": {
+    "run_name": "roberta-large",
+    "max_train": null,
+    "seed": 42,
+    "results_root": "results",
+    "model": "roberta-large",
+    "epochs": 3
+  }
+}

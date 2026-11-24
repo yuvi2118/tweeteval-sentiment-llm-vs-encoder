@@ -1,0 +1,76 @@
+{
+  "run_name": "qwen7b-fewshot",
+  "metrics": {
+    "tweeteval": {
+      "accuracy": 0.6922012373819603,
+      "macro_f1": 0.6729954274505068,
+      "macro_recall": 0.6611524896325108,
+      "confusion_matrix": [
+        [
+          3211,
+          736,
+          25
+        ],
+        [
+          1507,
+          4169,
+          261
+        ],
+        [
+          114,
+          1138,
+          1123
+        ]
+      ],
+      "n": 12284
+    },
+    "own": {
+      "accuracy": 0.9888888888888889,
+      "macro_f1": 0.9888858016115588,
+      "macro_recall": 0.9888888888888889,
+      "confusion_matrix": [
+        [
+          60,
+          0,
+          0
+        ],
+        [
+          2,
+          58,
+          0
+        ],
+        [
+          0,
+          0,
+          60
+        ]
+      ],
+      "n": 180
+    }
+  },
+  "cost": {
+    "trainable_params": 0,
+    "total_params": 7615616512,
+    "train_time_s": 0.0,
+    "peak_train_mem_gb": null,
+    "peak_infer_mem_gb": 18.191752433776855,
+    "throughput_tweets_per_s": 6.193689932443135,
+    "infer_batch_size": 32,
+    "device": "cuda",
+    "label_token_check": {
+      "mean_probability_mass_on_labels": 0.9998151659965515,
+      "min_probability_mass_on_labels": 0.9995548725128174,
+      "argmax_matches_greedy_generation": "19/20",
+      "greedy_token_is_a_label": "20/20"
+    }
+  },
+  "args": {
+    "run_name": "qwen7b-fewshot",
+    "max_train": null,
+    "seed": 42,
+    "results_root": "results",
+    "model": "Qwen/Qwen2.5-7B-Instruct",
+    "n_shots": 9,
+    "min_mass": 0.8
+  }
+}

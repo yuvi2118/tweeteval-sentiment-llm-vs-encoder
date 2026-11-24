@@ -1,0 +1,66 @@
+{
+  "run_name": "tfidf-lr",
+  "metrics": {
+    "tweeteval": {
+      "accuracy": 0.5890589384565288,
+      "macro_f1": 0.5540058759690948,
+      "macro_recall": 0.5609482664744897,
+      "confusion_matrix": [
+        [
+          1258,
+          2358,
+          356
+        ],
+        [
+          494,
+          4556,
+          887
+        ],
+        [
+          69,
+          884,
+          1422
+        ]
+      ],
+      "n": 12284
+    },
+    "own": {
+      "accuracy": 0.8277777777777777,
+      "macro_f1": 0.8213641602954579,
+      "macro_recall": 0.8277777777777778,
+      "confusion_matrix": [
+        [
+          37,
+          10,
+          13
+        ],
+        [
+          0,
+          57,
+          3
+        ],
+        [
+          2,
+          3,
+          55
+        ]
+      ],
+      "n": 180
+    }
+  },
+  "cost": {
+    "trainable_params": 285819,
+    "total_params": 285819,
+    "train_time_s": 22.671324729919434,
+    "peak_train_mem_gb": null,
+    "throughput_tweets_per_s": 27254.177049974984,
+    "infer_batch_size": 32,
+    "device": "cpu"
+  },
+  "args": {
+    "run_name": "tfidf-lr",
+    "max_train": null,
+    "seed": 42,
+    "results_root": "results"
+  }
+}

@@ -1,0 +1,70 @@
+{
+  "run_name": "bilstm-glove",
+  "metrics": {
+    "tweeteval": {
+      "accuracy": 0.6462064474112666,
+      "macro_f1": 0.6426988128539666,
+      "macro_recall": 0.6502045111771871,
+      "confusion_matrix": [
+        [
+          2625,
+          1120,
+          227
+        ],
+        [
+          1351,
+          3750,
+          836
+        ],
+        [
+          117,
+          695,
+          1563
+        ]
+      ],
+      "n": 12284
+    },
+    "own": {
+      "accuracy": 0.9277777777777778,
+      "macro_f1": 0.9288665815383372,
+      "macro_recall": 0.9277777777777777,
+      "confusion_matrix": [
+        [
+          52,
+          0,
+          8
+        ],
+        [
+          0,
+          56,
+          4
+        ],
+        [
+          0,
+          1,
+          59
+        ]
+      ],
+      "n": 180
+    }
+  },
+  "cost": {
+    "trainable_params": 2649723,
+    "total_params": 2649723,
+    "train_time_s": 45.50601148605347,
+    "peak_train_mem_gb": 0.3756589889526367,
+    "peak_infer_mem_gb": 0.1345958709716797,
+    "throughput_tweets_per_s": 6224.95435038665,
+    "infer_batch_size": 32,
+    "device": "cuda",
+    "best_epoch": 2,
+    "glove_used": true
+  },
+  "args": {
+    "run_name": "bilstm-glove",
+    "max_train": null,
+    "seed": 42,
+    "results_root": "results",
+    "epochs": 5
+  }
+}

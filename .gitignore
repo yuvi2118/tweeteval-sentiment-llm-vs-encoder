@@ -1,0 +1,24 @@
+# environment and caches (large, machine specific)
+.venv/
+.hf_cache/
+__pycache__/
+*.pyc
+# trained weights and adapters: never push
+checkpoints/
+*.safetensors
+*.bin
+*.pt
+# logs are local only
+logs/
+_drafts/
+.gensim_data/
+results_smoke/
+
+# per project brief: never push data or model files
+data/
+results_run1/
+*.ckpt
+.ipynb_checkpoints/
+results/*/preds_*.csv
+annotation/hard_examples_to_label.csv
+docs/SLIDES_OUTLINE.md

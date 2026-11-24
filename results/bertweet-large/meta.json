@@ -1,0 +1,69 @@
+{
+  "run_name": "bertweet-large",
+  "metrics": {
+    "tweeteval": {
+      "accuracy": 0.7227287528492348,
+      "macro_f1": 0.7238521488195659,
+      "macro_recall": 0.7422938075638269,
+      "confusion_matrix": [
+        [
+          3334,
+          593,
+          45
+        ],
+        [
+          1376,
+          3748,
+          813
+        ],
+        [
+          48,
+          531,
+          1796
+        ]
+      ],
+      "n": 12284
+    },
+    "own": {
+      "accuracy": 0.9944444444444445,
+      "macro_f1": 0.9944440586151817,
+      "macro_recall": 0.9944444444444445,
+      "confusion_matrix": [
+        [
+          60,
+          0,
+          0
+        ],
+        [
+          0,
+          59,
+          1
+        ],
+        [
+          0,
+          0,
+          60
+        ]
+      ],
+      "n": 180
+    }
+  },
+  "cost": {
+    "trainable_params": 355362819,
+    "total_params": 355362819,
+    "train_time_s": 878.2659323215485,
+    "peak_train_mem_gb": 6.612419128417969,
+    "peak_infer_mem_gb": 4.6242876052856445,
+    "throughput_tweets_per_s": 591.2305950098881,
+    "infer_batch_size": 32,
+    "device": "cuda"
+  },
+  "args": {
+    "run_name": "bertweet-large",
+    "max_train": null,
+    "seed": 42,
+    "results_root": "results",
+    "model": "vinai/bertweet-large",
+    "epochs": 3
+  }
+}
